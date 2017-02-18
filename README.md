@@ -5,6 +5,11 @@ Repositório para a Parte 1 do Treinamento da Level 5 Junior.
  - Cargo: Desenvolvedor Web
  - Empresa: Level 5 Junior
 
+Para este projeto foi escolhido a opção C-1
+descrita no arquivo de pdf disponibilizado 
+pelo grupo "treinamento" do time level 5 no 
+slack.
+
 ## HTML
 O html desse Projeto para o Treinamento 1 
 da Level 5 Junior está todo contido no
