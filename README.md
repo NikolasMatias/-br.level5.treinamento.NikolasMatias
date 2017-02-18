@@ -51,3 +51,8 @@ arquivo css/train.css. Sendo que esse
 Toda a descrição do css já foi feita
 no tópico do html. Sendo necessária para
 descrever sua organização.
+
+## Exemplo
+Segue a baixo um exemplo do ultimo modelo deste Projeto:
+
+![Exemplo do Projeto](https://github.com/NikolasMatias/br.level5.treinamento.NikolasMatias/blob/master/img/Exemplo.png?raw=true)
