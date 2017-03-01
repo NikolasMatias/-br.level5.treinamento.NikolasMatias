@@ -93,13 +93,18 @@
 
 .bar {
     margin: 0px;
-    padding: 0px;
     border-color: black;
     max-width:15%;
     height: 100%;
     width: 12%;
     display: inline-block;
     border: 1px solid;
+    vertical-align: middle;
+}
+.bar p{
+    vertical-align: middle;
+    line-height: 0%;
+    position: relative;
 }
 .bar:hover {
     background-color: #9cc1ce;
@@ -116,47 +121,56 @@
     max-width: 70%;
 }
 
-.col-4 {
+.col-4, .col-8{
     position: relative;
     width: 70%;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
 }
+.col-8 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 60%;
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
+
+}
+
+.col-4 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 30%;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30;
+    max-width: 35%;
+}
 
 @media (min-width: 576px) {
-    .col-4{
+    .col-4, .col-8{
         padding-right: 15px;
         padding-left: 15px;
     }
 }
 
 @media (min-width: 768px) {
-    .col-4{
+    .col-4, .col-8{
         padding-right: 15px;
         padding-left: 15px;
     }
 }
 
 @media (min-width: 992px) {
-    .col-4 {
+    .col-4, .col-8 {
         padding-right: 15px;
         padding-left: 15px;
     }
 }
 
 @media (min-width: 1200px) {
-    .col-4{
+    .col-4, .col-8{
         padding-right: 15px;
         padding-left: 15px;
     }
-}
-.col-4 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 30%;
-    -ms-flex: 0 0 30%;
-    flex: 0 0 30%;
-    max-width: 30%;
 }
 .rectangle-circular-left {
     margin-top: 25px;
@@ -165,6 +179,8 @@
     border-top-left-radius: 100px;
     height: 100px;
     position: relative;
+    text-align: right;
+    display: inline-block;
     background-color: whitesmoke;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -175,14 +191,50 @@
 .rectangle-circular-right-small {
     max-width: 35%;
     text-align: center;
-    display: inline-block;
+    position: absolute;
     width: 35%;
     height: 100%;
-    background-color: #9cc1ce;
+    background-color: whitesmoke;
     vertical-align: middle;
-    border-right: 1px solid black;
-    -webkit-border-radius: 50px; /* O -webkit é próprio para o Google Chrome e o Safari. */
-    -moz-border-radius: 50px; /* O -moz é próprio para o Firefox. */
-    border-radius: 100px;
+    -webkit-border-radius: 50%; /* O -webkit é próprio para o Google Chrome e o Safari. */
+    -moz-border-radius: 50%; /* O -moz é próprio para o Firefox. */
+    border-radius: 100%;
     border-left: 1px;
+}
+
+.rectangle-circular-right-small img {
+    position: relative;
+    height: 100%;
+    margin-left: -10px;
+    -webkit-border-radius: 50%; /* O -webkit é próprio para o Google Chrome e o Safari. */
+    -moz-border-radius: 50%; /* O -moz é próprio para o Firefox. */
+    border-radius: 100%;
+}
+
+.footer {
+    text-align: center;
+    background-color: honeydew;
+}
+
+#ContatosInformacao, #EmpresaInformacao, #ModelosInformacao, #NovidadesInformacao, #ProjetosInformacao {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.button-center {
+    text-align: center;
+}
+
+.img-user {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.user-information {
+    background-color: honeydew;
+    display: none;
 }

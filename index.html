@@ -20,73 +20,282 @@
                 <!-- Tive de colocar os bars desse jeito para que eles pudessem ficar juntos.
                      Mas sem perder a ordem aqui no html. Pois a cada enter que eu dou ele cria
                      um espaço entre as divs que eu não queria que permaneça.-->
-                <div class="bar"></div><!--
-             --><div class="bar"></div><!--
-             --><div class="bar"></div><!--
-             --><div class="bar"></div><!--
-             --><div class="bar"></div><!--
-             --><div class="bar"></div><!--
-             --><div class="bar"></div>
+                <a href="#" id="Inicio" data-target="InicioInformacao"><div class="bar">Inicio</div></a><!--
+             --><a href="#" id="Empresa" data-target="EmpresaInformacao"><div class="bar">Empresa</div></a><!--
+             --><a href="#" id="Novidades" data-target="NovidadesInformacao"><div class="bar">Novidades</div></a><!--
+             --><a href="#" id="Servicos" data-target="ServicosInformacao"><div class="bar">Serviços</div></a><!--
+             --><a href="#" id="Modelos" data-target="ModelosInformacao"><div class="bar">Modelos</div></a><!--
+             --><a href="#" id="Projetos" data-target="ProjetosInformacao"><div class="bar">Projetos</div></a><!--
+             --><a href="#" id="Contatos" data-target="ContatosInformacao"><div class="bar">Contatos</div></a>
             </div>
         </div>
     </head>
     <!-- O row eu peguei com a ajuda do Bootstrap. Apenas para poder organizar melhor.
          Mas isso não muda o fato de eu ter lido cada item para tentar entender ao máximo
          sobre como isso funciona.-->
-    <div class="row">
-        <div class="col-4">
-            <!-- A ideia é que de um retangulo que é circular do lado esquerdo e agora tem
-                 um circulo dentro dele que está localizado do lado esquerdo conforme
-                 exigido pelo treinamento número C-1. -->
-            <div class="rectangle-circular-left">
-                <div class="rectangle-circular-right-small"></div>
+    <div class="internalcontainer">
+        <div id="InicioInformacao">
+            <div class="row">
+                <div class="container">
+                    <div class="row"><h1>Funcionários</h1></div>
+                    <div class="row"><p>Clique em cada funcionário para mostar mais descrições
+                        sobre ele.</p></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <!-- A ideia é que de um retangulo que é circular do lado esquerdo e agora tem
+                         um circulo dentro dele que está localizado do lado esquerdo conforme
+                         exigido pelo treinamento número C-1. -->
+                    <div class="rectangle-circular-left" id="userbutton1" data-target="user1">
+                        <div class="rectangle-circular-right-small"><img src="img/businessman2.jpg" /></div>
+                        <p>Felipe Santos</p>
+                        <p>Engenheiro de Software</p>
+                    </div>
+                </div>
+             <div class="col-4">
+                    <div class="rectangle-circular-left" id="userbutton2" data-target="user2">
+                        <div class="rectangle-circular-right-small"><img src="img/businessman2.jpg" /></div>
+                        <p>Felipe Santos</p>
+                        <p>Engenheiro de Software</p>
+                    </div>
+                </div>
+             <div class="col-4">
+                    <div class="rectangle-circular-left" id="userbutton3" data-target="user3">
+                        <div class="rectangle-circular-right-small"><img src="img/businessman2.jpg" /></div>
+                        <p>Felipe Santos</p>
+                        <p>Engenheiro de Software</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container user-information" id="user1">
+                    <div class="row">
+                        <div class="col-4"><img class="img-user" src="img/businessman2.jpg" /></div>
+                        <div class="col-8">
+                            <h1>Felipe Santos</h1>
+                            <p>Profissão: Engenheiro de Software</p>
+                            <p>Telefone: (62) 99999-9999</p>
+                            <p>Bio: Tenho muita experiência pois trabalhei na melhor empresa
+                                junior do Brasil! A Level 5 Junior!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container user-information" id="user2">
+                    <div class="row">
+                        <div class="col-4"><img class="img-user" src="img/businessman2.jpg" /></div>
+                        <div class="col-8">
+                            <h1>Felipe Santos</h1>
+                            <p>Profissão: Engenheiro de Software</p>
+                            <p>Telefone: (62) 99999-9999</p>
+                            <p>Bio: Tenho muita experiência pois trabalhei na melhor empresa
+                                junior do Brasil! A Level 5 Junior!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container user-information" id="user3">
+                    <div class="row">
+                        <div class="col-4"><img class="img-user" src="img/businessman2.jpg" /></div>
+                        <div class="col-8">
+                            <h1>Felipe Santos</h1>
+                            <p>Profissão: Engenheiro de Software</p>
+                            <p>Telefone: (62) 99999-9999</p>
+                            <p>Bio: Tenho muita experiência pois trabalhei na melhor empresa
+                                junior do Brasil! A Level 5 Junior!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="rectangle-circular-left" id="userbutton4" data-target="user4">
+                        <div class="rectangle-circular-right-small"><img src="img/businessman2.jpg" /></div>
+                        <p>Felipe Santos</p>
+                        <p>Engenheiro de Software</p>
+                    </div>
+                </div><!--
+                --><div class="col-4">
+                    <div class="rectangle-circular-left" id="userbutton5" data-target="user5">
+                        <div class="rectangle-circular-right-small"><img src="img/businessman2.jpg" /></div>
+                        <p>Felipe Santos</p>
+                        <p>Engenheiro de Software</p>
+                    </div>
+                </div><!--
+                --><div class="col-4">
+                    <div class="rectangle-circular-left" id="userbutton6" data-target="user6">
+                        <div class="rectangle-circular-right-small"><img src="img/businessman2.jpg" /></div>
+                        <p>Felipe Santos</p>
+                        <p>Engenheiro de Software</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container user-information" id="user4">
+                    <div class="row">
+                        <div class="col-4"><img class="img-user" src="img/businessman2.jpg" /></div>
+                        <div class="col-8">
+                            <h1>Felipe Santos</h1>
+                            <p>Profissão: Engenheiro de Software</p>
+                            <p>Telefone: (62) 99999-9999</p>
+                            <p>Bio: Tenho muita experiência pois trabalhei na melhor empresa
+                                junior do Brasil! A Level 5 Junior!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container user-information" id="user5">
+                    <div class="row">
+                        <div class="col-4"><img class="img-user" src="img/businessman2.jpg" /></div>
+                        <div class="col-8">
+                            <h1>Felipe Santos</h1>
+                            <p>Profissão: Engenheiro de Software</p>
+                            <p>Telefone: (62) 99999-9999</p>
+                            <p>Bio: Tenho muita experiência pois trabalhei na melhor empresa
+                                junior do Brasil! A Level 5 Junior!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container user-information" id="user6">
+                    <div class="row">
+                        <div class="col-4"><img class="img-user" src="img/businessman2.jpg" /></div>
+                        <div class="col-8">
+                            <h1>Felipe Santos</h1>
+                            <p>Profissão: Engenheiro de Software</p>
+                            <p>Telefone: (62) 99999-9999</p>
+                            <p>Bio: Tenho muita experiência pois trabalhei na melhor empresa
+                                junior do Brasil! A Level 5 Junior!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="rectangle-circular-left" id="userbutton7" data-target="user7">
+                        <div class="rectangle-circular-right-small"><img src="img/businessman2.jpg" /></div>
+                        <p>Felipe Santos</p>
+                        <p>Engenheiro de Software</p>
+                    </div>
+                </div><!--
+                --><div class="col-4">
+                    <div class="rectangle-circular-left" id="userbutton8" data-target="user8">
+                        <div class="rectangle-circular-right-small"><img src="img/businessman2.jpg" /></div>
+                        <p>Felipe Santos</p>
+                        <p>Engenheiro de Software</p>
+                    </div>
+                </div><!--
+                --><div class="col-4">
+                    <div class="rectangle-circular-left" id="userbutton9" data-target="user9">
+                        <div class="rectangle-circular-right-small"><img src="img/businessman2.jpg" /></div>
+                        <p>Felipe Santos</p>
+                        <p>Engenheiro de Software</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container user-information" id="user7">
+                    <div class="row">
+                        <div class="col-4"><img class="img-user" src="img/businessman2.jpg" /></div>
+                        <div class="col-8">
+                            <h1>Felipe Santos</h1>
+                            <p>Profissão: Engenheiro de Software</p>
+                            <p>Telefone: (62) 99999-9999</p>
+                            <p>Bio: Tenho muita experiência pois trabalhei na melhor empresa
+                                junior do Brasil! A Level 5 Junior!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container user-information" id="user8">
+                    <div class="row">
+                        <div class="col-4"><img class="img-user" src="img/businessman2.jpg" /></div>
+                        <div class="col-8">
+                            <h1>Felipe Santos</h1>
+                            <p>Profissão: Engenheiro de Software</p>
+                            <p>Telefone: (62) 99999-9999</p>
+                            <p>Bio: Tenho muita experiência pois trabalhei na melhor empresa
+                                junior do Brasil! A Level 5 Junior!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container user-information" id="user9">
+                    <div class="row">
+                        <div class="col-4"><img class="img-user" src="img/businessman2.jpg" /></div>
+                        <div class="col-8">
+                            <h1>Felipe Santos</h1>
+                            <p>Profissão: Engenheiro de Software</p>
+                            <p>Telefone: (62) 99999-9999</p>
+                            <p>Bio: Tenho muita experiência pois trabalhei na melhor empresa
+                                junior do Brasil! A Level 5 Junior!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="rectangle-circular-left">
-                <div class="rectangle-circular-right-small"></div>
+
+        <div class="row" id="EmpresaInformacao">
+            <div class="container">
+                <div class="row"><h1>Empresa</h1></div>
+                <div class="row"><p>A level 5 Junior foi fundada em 2015 com o propósito
+                    de criar projetos incriveis!</p></div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="rectangle-circular-left">
-                <div class="rectangle-circular-right-small"></div>
+
+        <div class="row" id="NovidadesInformacao">
+            <div class="container">
+                <div class="row"><h1>Novidades</h1></div>
+                <div class="row"><p>Ainda não está pronto.</p></div>
             </div>
+        </div>
+
+        <div class="row" id="ServicosInformacao">
+            <div class="container">
+                <div class="row"><h1>Serviços</h1></div>
+                <div class="row"><p>Ainda não está pronto.</p></div>
+            </div>
+        </div>
+
+        <div class="row" id="ModelosInformacao">
+            <div class="container">
+                <div class="row"><h1>Modelos</h1></div>
+                <div class="row"><p>Ainda não está pronto.</p></div>
+            </div>
+        </div>
+
+        <div class="row" id="ProjetosInformacao">
+            <div class="container">
+                <div class="row"><h1>Projetos</h1></div>
+                <div class="row"><p>Ainda não está pronto.</p></div>
+            </div>
+        </div>
+
+        <div class="row" id="ContatosInformacao">
+            <h1>Level 5 Junior</h1>
+            <p>Uma empresa incrivel! Cheia de pessoas legais e
+                competentes capazes de criarem os melhores softwares.</p>
+            <p>Telefone: 99-99999-9999</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-4">
-            <div class="rectangle-circular-left">
-                <div class="rectangle-circular-right-small"></div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="rectangle-circular-left">
-                <div class="rectangle-circular-right-small"></div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="rectangle-circular-left">
-                <div class="rectangle-circular-right-small"></div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <div class="rectangle-circular-left">
-                <div class="rectangle-circular-right-small"></div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="rectangle-circular-left">
-                <div class="rectangle-circular-right-small"></div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="rectangle-circular-left">
-                <div class="rectangle-circular-right-small"></div>
-            </div>
-        </div>
-    </div>
+    <footer class="footer">
+        <p>Treinamentos, Level 5 Junior - Nikolas Matias</p>
+    </footer>
 </div>
+
+<!-- Script's Place -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/train.js"></script>
+
 </body>
 </html>
